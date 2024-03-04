@@ -1,0 +1,28 @@
+<h1>Componente profesores</h1>
+
+<main>
+
+    <div class="input">
+
+        <input type="text" name="id" class="ID" placeholder="Introduce un id">
+
+        <div class="input">
+            <button class="btn" type="button">Get</button>
+        </div>
+
+    </div>
+
+    <ul class="input">
+
+        <li *ngFor="let profesor of profesores" class="list">
+            Id: {{profesor.id}} <br>
+            Usuario: {{profesor.usuario}} <br>
+            Email: {{profesor.email}} <br>
+            Modulo: {{profesor.modulo}} <br>
+            Horas: {{profesor.horas}} <br>
+            Foto: {{profesor.foto}} <br>
+        </li>
+
+    </ul>
+
+</main>
